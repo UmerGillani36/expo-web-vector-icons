@@ -25,7 +25,7 @@ export default function HomeScreen() {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type='title'>Welcome!</ThemedText>
+        <ThemedText type='title'>!</ThemedText>
         <HelloWave />
         <IconSymbol
           name='chevron.right'
