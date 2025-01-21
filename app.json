@@ -2,7 +2,7 @@
   "expo": {
     "name": "expo-web-vector-icons",
     "slug": "expo-web-vector-icons",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -11,6 +11,10 @@
     "ios": {
       "supportsTablet": true
     },
+    "assetBundlePatterns": [
+      "node_modules/@expo/vector-icons/**/*",
+      "**/*"
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
@@ -32,11 +36,21 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-asset",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
       "baseUrl": "/expo-gh-pages"
+    },
+     "extra": {
+      "router": {
+        "origin": false
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
